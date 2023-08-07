@@ -1,4 +1,7 @@
 docker>=4.1.0
+# issue https://github.com/docker/docker-py/issues/3113
+# docker.errors.DockerException: Error while fetching server API version: request() got an unexpected keyword argument 'chunked'
+urllib3 >= 1.26.0, < 2
 docker-compose==1.26.2
 python-dateutil==2.8.2
 pyyaml==5.3.1
